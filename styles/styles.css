@@ -27,6 +27,7 @@ Grijs #7A7A7A (voor de service-tegel tekst);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /*border: solid red;*/
 }
 
 body {
@@ -54,12 +55,13 @@ h1, h2, h3, h4, h5, h6 {
 header {
     display: flex;
     flex-direction: column;
-    background: #4845E4;
+    background-color: #4845E4;
     color: white;
-    height: 400px;
+    padding: 5px;
     justify-content: center;
     border-style: solid;
     border-color: red;
+    position: relative;
 }
 
 nav ul {
@@ -84,23 +86,58 @@ h1 {
 
 .contact-button {
     background-color: #ED4385;
-    width: 10%;
-    padding: 10px;
+    text-transform: uppercase;
+    width: 15%;
+    padding: 15px;
     color: white;
-    border-radius: 10px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
 }
 
+/*.squiggle-stripe {*/
+/*    display: block;*/
+/*    background-image: url("assets/squiggle_line_stripe.svg");*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    left: 0;*/
+/*    top: 0;*/
+/*    opacity:0.6;*/
+/*    position: absolute;*/
+/*    background-size: auto;*/
+/*    border-style: solid;*/
+/*    border-color: white;*/
+/*}*/
+
 .squiggle-stripe {
-    background-image: url("../assets/squiggle_line_stripe.svg");
-    width: 70px;
-    height: 100px;
-    color: white;
+    background-image: url("../assets/squiggle_line.svg");
     border-style: solid;
-    border-style: gre
+    border-color: white;
+    width: 100px;
+    height: 70px;
+    z-index: 2;
 }
 
 /* --------------- 4.2 Introduction ------------------- */
 
+main {
+    display: flex;
+    flex-direction: column;
+}
 
+.introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #5722CD;
+    height: 300px;
+    border-style: solid;
+    border-color: darkgreen;
+}
+
+.intro_link {
+    color: black;
+}
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
+

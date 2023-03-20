@@ -6,22 +6,22 @@
     <title>Concept-Opdracht</title>
 </head>
 <body>
-<header id="header" class="outer-content-container">
-    <div class="inner-content-container">
-        <nav>
+<header class="outer-content-container-header">
+    <div class="inner-content-container-header">
+        <nav class="nav-bar">
             <ul>
                 <li><a href="#case-studies"></a>Case studies</li>
                 <li><a href="#services"></a>Services</li>
                 <li><a href="#contact"></a>Contact us</li>
             </ul>
         </nav>
-    </div>
 
-    <div class="header-text">
+    <div class="header-text" >
         <h1> Your website is an investment in the success of your business.</h1>
         <p class="to-help">We are here to help you succeed.
         </p>
         <button type="button" class="contact-button">Let's work together</button>
+    </div>
     </div>
 
     <div class="squiggle-stripe">
@@ -30,8 +30,8 @@
 </header>
 
 <main>
-    <section>
-        <div class="introduction">
+    <section class="outer-content-container-introduction">
+        <div id="introduction" class="inner-content-container-introduction">
             <h3>
                 Rekupe is a digital agency in Los Angeles.
             </h3>
@@ -41,25 +41,84 @@
             <h3>
                 We see every project as a fresh opportunity, pushing ourselves to create new digital experiences.
             </h3>
-            <p class="intro_link">Have a question? <a href="http://"> Click here</a> to contact us!</p>
+            <p class="intro_link">Have a question? <a href="https://"> Click here</a> to contact us!</p>
 
         </div>
     </section>
 
-    <section class="projects">
-        <article class="rolling-stones">
+    <section id="projects">
+        <article class="inner-content-container-media" id="rolling-stones-project">
             <div class="tekst-rolling-stones">
                 <h3>Rolling Stone</h3>
                 <div class="squiggle_line1"></div>
                 <p>You know Rolling Stone. It’s the definitive voice in music, politics and culture. It’s a global
                     icon.</p>
-                <p>VIEW PROJECT</p>
+                <p> <a href="https://" class="view-project"> view project</a> </p>
             </div>
-            <span>
-<!--                hier afbeelding-->
+            <span class="image-wrap-rolling-stones">
+                <img id="image-wrap-rolling-stones-wrap" src="../Frontend-html-css-concept-opdracht/assets/work-image-01.jpeg" alt="project rolling stones">
             </span>
         </article>
 
+        <article class="inner-content-container-media" id="variety">
+            <div class="tekst-variety">
+                <h3>Variety</h3>
+                <div class="squiggle_line2"></div>
+                <p>Variety is an industry leader for breaking entertainment news, reviews and box office results with archive of content dating back to 1905.</p>
+                <p> <a href="https://" class="view-project"> view project</a> </p>
+            </div>
+            <span class="image-wrap-variety">
+                <img id="image-wrap-variety-wrap" src="../Frontend-html-css-concept-opdracht/assets/work-image-02.jpeg" alt="project variety">
+            </span>
+        </article>
+
+        <article class="inner-content-container-media" id="worth">
+            <div class="tekst-worth">
+            <h3>Worth</h3>
+            <div class="squiggle-line3"></div>
+            <p>A global media platform connecting a community that embraces worth beyond wealth.</p>
+        <p> <a href="https://" class="view-project"> view project</a> </p>
+        </div>
+        <span class="image-wrap-worth">
+                <img id="image-wrap-worth-wrap" src="../Frontend-html-css-concept-opdracht/assets/work-image-03.jpeg" alt="project worth">
+            </span>
+        </article>
+    </section>
+
+    <section class="outer-content-container-header">
+        <div class="inner-content-container-tegels">
+            <article class="web-design">
+                <img src="../Frontend-html-css-concept-opdracht/assets/icon_web-design.svg" alt="Web Design" id="web-design-img">
+                <h4>Web Design</h4>
+                <p> Good web design is how companies stand out from their competitors. High quality web design leads to increased user conversion and engagement. Through a proven web design process, we help clients launch websites and products that improve on their bottom line.</p>
+            </article>
+            <article class="web-development">
+                <img src="../Frontend-html-css-concept-opdracht/assets/icon_web-development.svg" alt="web development" id="web-development-image">
+                <h4>Web development</h4>
+                <p>Modern websites need to be responsive and fully functional at all sizes. We develop all of our sites with a mobile first approach and ensure that our code quality is clean, organized and performant. Already have a design but need it developed? We’re here to help! </p>
+            </article>
+
+            <article class="user-experiences">
+                <img src="../Frontend-html-css-concept-opdracht/assets/icon_ux.svg" alt="user experiences" id="user-experiences-image">
+                <h4>User Experiences</h4>
+                <p>In order to build successful products you have to understand the user. We create user personas, wireframes and prototypes to test with users. This allows us to gather feedback which helps to shape the product and can quickly eliminate potential risks – saving you time and money.</p>
+            </article>
+            <article class="logo-design">
+                <img src="../Frontend-html-css-concept-opdracht/assets/icon_graphic-design.svg" alt="graphic-design" id="logo-design-image">
+                <h4>Logo Design + Branding</h4>
+                <p>Nike, Apple, Coca-Cola, Starbucks. What do all of these brands have in common? Easily recognizable logos and brand identity. The best brands stand out from the crowd by having a clear and unique point of view. We will work with you to understand your vision and help create a unique brand identity and style guide for your company.</p>
+            </article>
+            <article class="SEO">
+                <img src="../Frontend-html-css-concept-opdracht/assets/icon_seo.svg" alt="SEO" id="SEO-image">
+                <h4>SEO</h4>
+                <p>Do you want your site to rank higher in search results? Google is constantly changing their algorithms for how they rank pages. Don’t worry about constantly playing catch-up. We will make sure your website it optimized, providing you the best opportunities for organic search exposure.</p>
+            </article>
+            <article class="copywriting">
+                <img src="../Frontend-html-css-concept-opdracht/assets/icon_copywriting.svg" alt="copywriting" id="copywriting-image">
+                <h4>Copy writing</h4>
+                <p>Brand messaging needs to be clear, direct and easy to understand to be effective. A unique tone of voice will help you stand out from the crowd and build brand loyalty. We work with you to establish your brand bible and ensure your messaging is focused and targeted.</p>
+            </article>
+        </div>
     </section>
 
 </main>

@@ -53,36 +53,52 @@ h1, h2, h3, h4, h5, h6 {
 
 /* --------------- 4.1 Header ------------------------- */
 
-header {
+.outer-content-container-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.inner-content-container-header {
+    flex-basis: 600px;
+    margin-inline: 20px;
+    justify-content: center;
     display: flex;
     flex-direction: column;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+header {
     background-color: #4845E4;
-    color: white;
-    padding: 5px;
-    justify-content: center;
     border-style: solid;
     border-color: red;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
-nav ul {
+.nav-bar {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    width: 100%;
+    color: white;
     gap: 40px;
-    padding: 20px 40px;
     border-style: solid;
     border-color: yellow;
+    width: 100%;
 }
 
 .header-text {
-    display: flex;
-    flex-direction: column;
+    /*display: flex;*/
+    /*flex-direction: column;*/
     text-align: center;
+    /*justify-content: center;*/
+    color: white;
     padding-top: 50px;
     padding-bottom: 50px;
-    gap: 55px;
+    gap: 45px;
 }
 
 .to-help {
@@ -92,9 +108,10 @@ nav ul {
 .contact-button {
     display: flex;
     justify-content: center;
+    text-align: center;
     background-color: #ED4385;
     text-transform: uppercase;
-    width: 15%;
+    width: 40%;
     padding: 15px;
     color: white;
     border-radius: 20px;
@@ -116,30 +133,46 @@ nav ul {
 /*}*/
 
 .squiggle-stripe {
-    background-image: url("../Frontend-html-css-concept-opdracht/assets/squiggle_line_stripe.svg");
+    background-image: url("../Frontend-html-css-concept-opdracht/assets/squiggle_line_stripe.svg"); /*computer heeft moeten om afbeelding te vinden, samen met Sam naar gekeken dit was de beste oplossing*/
     border-style: solid;
     border-color: white;
-    width: 100px;
-    height: 70px;
+    width: 85px;
+    height: 75px;
     justify-content: center;
-    /*z-index: 2;*/
-    /*position: absolute;*/
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
 }
 
 
 /* --------------- 4.2 Introduction ------------------- */
+.outer-content-container-introduction {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
+.inner-content-container-introduction {
+    flex-basis: 600px;
+    margin-inline: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
 main {
     display: flex;
     flex-direction: column;
 }
 
-.introduction {
+#introduction {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    color: #5722CD;
+    color: #4845E4;
     gap: 70px;
     border-style: solid;
     border-color: darkgreen;
@@ -149,28 +182,244 @@ main {
     color: black;
 }
 
-/* ------------------------------- 5. Media Queries -------------------------------- */
-
-.projects {
-    background-color: #F3F6F9;
+a:link {
+    text-decoration: none;
+    color: #5722CD;
 }
 
-.projects {
+/* ------------------------------- 5. Media Queries -------------------------------- */
+.outer-content-container-media {
+    width: 100%;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.inner-content-container-media {
+    flex-basis: 1200px;
+    margin-inline: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+#projects {
+    background-color: lightgray;
+}
+
+#rolling-stones-project {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    border: solid black;
 }
 
 .tekst-rolling-stones {
     display: flex;
     flex-direction: column;
+    text-align: left;
     gap: 50px;
+    margin: 130px;
+    font-weight: bold;
 }
 
 .squiggle_line1 {
     background-image: url("../Frontend-html-css-concept-opdracht/assets/squiggle_line.svg");
-    border: solid red;
-    height: 100px;
+    /*border: solid red;*/
+    height: 6px;
     width: 70px;
 }
 
+.view-project {
+    color: #5722CD;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.image-wrap-rolling-stones {
+    width: 100%;
+}
+
+#image-wrap-rolling-stones-wrap {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 50px;
+}
+
+#variety {
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.tekst-variety {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 50px;
+    margin: 130px;
+    font-weight: bold;
+}
+
+.squiggle_line2 {
+    background-image: url("../Frontend-html-css-concept-opdracht/assets/squiggle_line.svg");
+    /*border: solid red;*/
+    height: 6px;
+    width: 70px;
+}
+
+.image-wrap-variety {
+    width: 100%;
+}
+
+#image-wrap-variety-wrap {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 50px;
+}
+
+#worth {
+    display: flex;
+    flex-direction: row;
+}
+
+.tekst-worth {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 50px;
+    margin: 130px;
+    font-weight: bold;
+}
+
+.squiggle-line3 {
+    background-image: url("../Frontend-html-css-concept-opdracht/assets/squiggle_line.svg");
+    /*border: solid red;*/
+    height: 6px;
+    width: 70px;
+}
+
+.image-wrap-worth {
+    width: 100%;
+}
+
+#image-wrap-worth-wrap {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 50px;
+}
+
+.inner-content-container-tegels {
+    flex-basis: 1200px;
+    margin-inline: 20px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    flex-grow: 0;
+    border: solid red;
+    flex-wrap: wrap;
+    }
+h4 {
+    color: #4845E4;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.web-design {
+    display: flex;
+    border: solid #4845E4;
+    width: 375px;
+    height: 200px;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+#web-design-img {
+    width: 60px;
+    height: 60px;
+}
+
+.web-development {
+    display: flex;
+    border: solid #4845E4;
+    width: 375px;
+    height: 200px;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+#web-development-image {
+    width: 60px;
+    height: 60px;
+}
+.user-experiences {
+    display: flex;
+    border: solid #4845E4;
+    width: 375px;
+    height: 200px;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+#user-experiences-image {
+    width: 60px;
+    height: 60px;
+}
+.logo-design {
+    display: flex;
+    border: solid #4845E4;
+    width: 375px;
+    height: 200px;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+#logo-design-image {
+    width: 60px;
+    height: 60px;
+}
+
+.SEO {
+    display: flex;
+    border: solid #4845E4;
+    width: 375px;
+    height: 200px;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+#SEO-image {
+    width: 60px;
+    height: 60px;
+}
+
+.copywriting {
+    display: flex;
+    border: solid #4845E4;
+    width: 375px;
+    height: 200px;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+#copywriting-image {
+    width: 60px;
+    height: 60px;
+}
 
 
